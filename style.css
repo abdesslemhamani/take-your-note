@@ -1,0 +1,70 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    padding: auto;
+
+    background: linear-gradient(to left, rgb(55, 139, 192), lightblue);
+
+}
+
+.heading {
+    color: rgb(3, 22, 42);
+    text-align: left;
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.info-text {
+    text-align: left;
+    color: rgb(3, 22, 42);
+    font-size: 18px;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 40px;
+    justify-content: center;
+    padding: 50px;
+}
+
+.note {
+    padding: 17px;
+    border-radius: 20px;
+    resize: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    height: 200px;
+    color: darkblue;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+}
+
+.note::placeholder {
+    color: gray;
+    opacity: 30%;
+}
+
+.note:hover,
+.note:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 300ms ease;
+}
+
+.btn {
+    height: 200px;
+    border-color: rgba(255, 255, 255, 0.37);
+    background: rgba(255, 255, 255, 0.27);
+    border-radius: 20px;
+    font-size: 80px;
+    font-weight: 1000;
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.6);
+    transition: all 300ms ease;
+}
