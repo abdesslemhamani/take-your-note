@@ -34,3 +34,16 @@ function createNoteEl(id, content) {
       target.content = content;
       saveNote(notes);
     }
+    function addNote() {
+      const notes = getNotes();
+      const noteObj = {
+        id: Math.floor(Math.random() * 100000),
+        content: "",
+      };
+      const noteEl = createNoteEl(noteObj.id, noteObj.content);
+  appEl.insertBefore(noteEl, btnEl);
+
+  notes.push(noteObj);
+
+  saveNote(notes);
+}
